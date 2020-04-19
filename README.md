@@ -1,1 +1,1 @@
-# Schach
+# Webpack-Boilerplate
