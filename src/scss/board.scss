@@ -1,0 +1,26 @@
+.board {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+
+    &__field {
+        width: 50px;
+        height: 50px;
+
+        &--white {
+            background-color: rgb(167, 148, 66);
+        }
+
+        &--dark {
+            background-color: rgb(85, 78, 41);
+        }
+    }
+
+    &__item {
+        width: 50px;
+        height: 50px;
+    }
+}

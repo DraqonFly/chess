@@ -1,95 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Chess </title>
-
-    <% htmlWebpackPlugin.files.css.forEach(function(file){ %>
-        <link href="<%- file %>" rel="stylesheet">
-    <% }); %>
-</head>
-
-<body class="body">
-    <h1 class="body__title"> Chess </h1> 
-
-    <div class="board">
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white ">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark ">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white ">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark ">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white ">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark ">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white ">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark ">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-        <div class="board__field board__field--dark">   </div>
-        <div class="board__field board__field--white">   </div>
-    </div>
-
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="270" height="90">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"  width="100%" height="100%">
     <!-- white king //-->
     <g style="fill:none; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" transform="translate(0,0)">
         <path
@@ -335,16 +246,5 @@
     </g>
     
     <!-- black pawn //-->
-    <g id="blackPawn" transform="translate(225,45)">
-        <path
-        d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
-        style="opacity:1; fill:#000000; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-    </g>
+    <g transform="translate(225,45)"> <path d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z " style="opacity:1; fill:#000000; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" /> </g>
 </svg>
-
-    <% htmlWebpackPlugin.files.js.forEach(function(file){ %>
-        <script src="<%- file %>"></script>
-    <% }); %>
-</body>
-
-</html>
