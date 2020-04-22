@@ -75,10 +75,10 @@ var svg__blackBishop = '<g style="opacity:1; fill:none; fill-rule:evenodd; fill-
 + '<path d="M 15,32 C 17.5,34.5 27.5,34.5 30,32 C 30.5,30.5 30,30 30,30 C 30,27.5 27.5,26 27.5,26 C 33,24.5 33.5,14.5 22.5,10.5 C 11.5,14.5 12,24.5 17.5,26 C 17.5,26 15,27.5 15,30 C 15,30 14.5,30.5 15,32 z" />'
 + '<path d="M 25 8 A 2.5 2.5 0 1 1  20,8 A 2.5 2.5 0 1 1  25 8 z" />'
 + '</g>'
-+ '<path d="M 17.5,26 L 27.5,26 M 15,30 L 30,30 M 22.5,15.5 L 22.5,20.5 M 20,18 L 25,18" style="fill:none; stroke:#000000; stroke-linejoin:miter;" />'
++ '<path d="M 17.5,26 L 27.5,26 M 15,30 L 30,30 M 22.5,15.5 L 22.5,20.5 M 20,18 L 25,18" style="fill:white; stroke:white; stroke-linejoin:miter;" />'
 + '</g>'
 
-var svg__blackKnight = '<g style="fill:none; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">'
+var svg__blackKing = '<g style="fill:none; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">'
 + '<path d="M 22.5,11.63 L 22.5,6" style="fill:none; stroke:white; stroke-linejoin:miter;" />'
 + '<path d="M 20,8 L 25,8" style="fill:none; stroke:white; stroke-linejoin:miter;" />'
 + '<path d="M 22.5,25 C 22.5,25 27,17.5 25.5,14.5 C 25.5,14.5 24.5,12 22.5,12 C 20.5,12 19.5,14.5 19.5,14.5 C 18,17.5 22.5,25 22.5,25" style="fill:black; stroke:white; stroke-linecap:butt; stroke-linejoin:miter;" />'
@@ -100,11 +100,13 @@ var svg__blackQueen = '<g style="opacity:1; fill:black; fill-opacity:1; fill-rul
 + '<path d="M 12,33.5 C 18,32.5 27,32.5 33,33.5" style="fill:none;" />'
 + '</g>';
 
-var svg__blackKing = '<g style="opacity:1; fill:none; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">'
+var svg__blackKnight = '<g style="opacity:1; fill:none; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">'
 + '<path d="M 22,10 C 32.5,11 38.5,18 38,39 L 15,39 C 15,30 25,32.5 23,18" style="fill:black; stroke:white;" />'
 + '<path d="M 24,18 C 24.38,20.91 18.45,25.37 16,27 C 13,29 13.18,31.34 11,31 C 9.958,30.06 12.41,27.96 11,28 C 10,28 11.19,29.23 10,30 C 9,30 5.997,31 6,26 C 6,24 12,14 12,14 C 12,14 13.89,12.1 14,10.5 C 13.27,9.506 13.5,8.5 13.5,7.5 C 14.5,6.5 16.5,10 16.5,10 L 18.5,10 C 18.5,10 19.28,8.008 21,7 C 22,7 22,10 22,10" style="fill:black; stroke:white;" />'
 + '<path d="M 9.5 25.5 A 0.5 0.5 0 1 1 8.5,25.5 A 0.5 0.5 0 1 1 9.5 25.5 z" style="fill:white; stroke:white;" />'
 + '<path d="M 15 15.5 A 0.5 1.5 0 1 1  14,15.5 A 0.5 1.5 0 1 1  15 15.5 z" transform="matrix(0.866,0.5,-0.5,0.866,9.693,-5.173)" style="fill:white; stroke:white;" />'
 + '</g>';
 
-export {svg__blackRook, svg__blackBishop, svg__blackKing, svg__blackPawn, svg__blackQueen, svg__blackKnight, svg__whiteBishop, svg__whiteKing, svg__whiteKnight, svg__whitePawn, svg__whiteQueen, svg__whiteRook}
+let figures = [svg__blackRook, svg__blackBishop, svg__blackKing, svg__blackPawn, svg__blackQueen, svg__blackKnight, svg__whiteRook, svg__whiteBishop, svg__whiteKing, svg__whitePawn, svg__whiteQueen, svg__whiteKnight];
+
+export {figures}
